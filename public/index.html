@@ -43,10 +43,15 @@
     <script type="text/babel">
         var MyComponent1 = React.createClass({
           render: function() {
-            return (<h2>My first component using React!!</h2>);
+            return (
+                <div>
+                    <h1>{this.props.title}</h1>
+                    <h2>{this.props.description}</h2>
+                </div>
+              );
           }
         });
-        ReactDOM.render(<MyComponent1/>,document.getElementById('root'));
+        ReactDOM.render(<MyComponent1 title="new title" description="news description"/>,document.getElementById('root'));
     </script>
   </body>
 </html>
