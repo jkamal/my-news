@@ -20,12 +20,16 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+      <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
   </head>
   <body>
-    <noscript>
+<!--     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+ -->    <div id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -36,5 +40,8 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/babel">
+        ReactDOM.render(<h2>Welcome to reactjs!! Kamal!!</h2>,document.getElementById('root'));
+    </script>
   </body>
 </html>
