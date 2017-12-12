@@ -41,7 +41,12 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script type="text/babel">
-        ReactDOM.render(<h2>Welcome to reactjs!! Kamal!!</h2>,document.getElementById('root'));
+        var MyComponent1 = React.createClass({
+          render: function() {
+            return (<h2>My first component using React!!</h2>);
+          }
+        });
+        ReactDOM.render(<MyComponent1/>,document.getElementById('root'));
     </script>
   </body>
 </html>
